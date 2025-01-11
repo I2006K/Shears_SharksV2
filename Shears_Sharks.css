@@ -1,0 +1,215 @@
+/*todo el cuerpo*/
+body{
+    font-family: sans-serif;
+    margin: 0;
+    width: 100vw; 
+    height: 100vh; 
+    display:grid;
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-columns: repeat(8,1fr);
+}
+/*cabecera*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:aliceblue;
+    background-color: black;
+    grid-column: 1/9;
+    grid-row:1/2;
+}
+h1{
+    font-size: 300%;
+    padding-left: 1em;
+    justify-self: start;
+    flex-grow: 0.2;
+    white-space: nowrap;
+}
+/*contenedor que tiene type search + imagen micro*/
+.bloque_buscador{
+    margin-top: 2em;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+/*type search*/
+.buscador{
+    padding-left: 1em;
+    height: 3em;
+    border-radius: 3em;
+    width: 70%;
+}
+/*imagen del micro responsive*/
+.micro{
+    width: 2.2em;
+}
+/*bloque de el carrito y el usuario*/
+.usuario{
+    align-self: flex-start;
+    white-space: nowrap;
+}
+/*carrito y usuario*/
+.imagenes{
+    width: 3.5em;
+}
+/****************************************/
+/*cuerpo*/
+.cuerpo{
+    background-color: #FFFFFF;
+    grid-column: 1/8;
+    grid-row: 2/3;
+}
+/*menu*/
+.menu {
+    width:0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+.menu > li {
+    position: relative;
+}
+.menu > li > a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+}
+.menu>li>a>img{
+    width: 3em;
+}
+/* Submenú */
+.submenu {
+    border: solid black 1px;
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #bdbdbd;
+    padding: 0;
+    margin: 0;
+    display: none;
+    min-width: 200px; 
+}
+.submenu li a {
+    border: solid black 1px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    white-space: nowrap;
+}
+.submenu li a:hover {
+    background-color: #575757;
+}
+.dropdown:hover .submenu {
+    display: block;
+    position:absolute;
+}
+.productos{
+    height: 100%;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto repeat(2,1fr);
+    
+
+}
+div h2{
+    padding-left: 2em;
+}
+.Hombre{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.Mujer{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.Tendencias{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.niño{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.niña{
+    grid-column: 2/3;
+    grid-row: 3/4;;
+}
+.ultimas_adquisiciones{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+div div img{
+    width: 100%; /* La imagen tomará el ancho disponible del contenedor */
+    max-width: 10em; /* Ajusta este tamaño máximo según lo que necesites */
+}
+.contenedor_cuerpo{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+}
+site1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+site2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+/****************************************/
+/*el aside*/
+.aside{
+    background-color:#bdbdbd;
+    grid-column: 8/9;
+    grid-row: 2/3;
+    text-align: center;
+    
+}
+.aside img{
+    width:7em;
+    padding-bottom: 4em;
+}
+/*****************************************/
+/*Pie de pagina*/
+.footer{
+    display:grid;
+    background-color: #616161;
+    grid-column: 1/9;
+    grid-row:3/4;
+    font-size: 14px;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:2em;
+    margin-bottom:1em;
+}
+.footer-section h4 {
+    font-size: 1.75em; 
+    margin-bottom:0.5em;
+}
+
+.footer-section p {
+    margin: 2em 0; 
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none; 
+}
+.footer-section a:hover{
+    color:gainsboro;
+}
+.footer-bottom {
+    text-align: right; /* Alinea el texto a la derecha */
+    border-top: 0.1em solid #444; /* Línea superior delgada */
+    padding-top: 0.5em; /* Espacio entre la línea y el texto */
+    margin-top: 1em; /* Espacio superior del bloque */
+    font-size: 0.9em; /* Texto ligeramente más pequeño */
+}
+/*****************************************/
